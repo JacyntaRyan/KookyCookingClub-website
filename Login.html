@@ -1,0 +1,58 @@
+<!--//Jacynta Ryan-->
+<?php
+session_start();
+?>
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>KookyCookingClub</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css">
+   
+</head>
+
+<body>
+    
+<header>
+ <h1 id="heading">KookyCookingClub</h1>
+</header>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="Index.php">Home</a></li>
+        <li><a href="Courses.php">Courses</a></li>
+        <li><a href="Events.php">Events</a></li>
+        <li><a href="Login.html">Log In</a></li>
+               
+    </ul>
+</nav>
+
+<main>
+    <h2 id="reg_header">Log In</h2>
+    <form action="Login.php" method ="POST" id="form">
+        <fieldset>
+
+
+            <Div id ="left_form" style="float:left">
+                
+                <label>Username:</label><br>
+                <input required type="text" name="user_name"><br>
+                
+                
+            </Div>
+            <Div id ="right_form" style="float:right">
+                
+                <label>Password:</label><br>
+                <input required type="password" name="password"><br>
+                <input type="submit" value="Submit" name="submit" >
+                
+            </Div>
+
+        </fieldset>
+    </form>
+    <h3><a href = "Registration.html">Not registered? Follow this link.</a></h3>
+</main>
+<footer>
+</footer>
+</body>
+</html>

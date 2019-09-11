@@ -1,0 +1,53 @@
+<!--//Jacynta Ryan-->
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>KookyCookingClub</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <h1 id="heading">KookyCookingClub</h1>
+<header>
+
+</header>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="Index.php">Home</a></li>
+        <li><a href="Courses.php">Courses</a></li>
+        <li><a href="Events.php">Events</a></li>
+        <li><a href="AdminProfile.php">Profile</a></li>      
+    </ul>
+</nav>
+
+<main>
+    <h2 id="reg_header">Add Event</h2>
+    <form action ="AddEvent.php"  id="form"  method ="POST">
+        <fieldset>
+
+
+            <Div id ="left_form" style="float:left">
+                <label>Event name:</label><br>
+                <input type="text" name="name" ><br>
+                <label>Location:</label><br>
+                <input type="text" name="location" ><br>               
+                <label>Date: </label><br>
+                <input type="date" name="date"><br><br>
+                <input type="submit" value="Submit" name="submit">
+            </Div>
+            <Div id ="right_form" style="float:right">
+                <label>Image Path: </label><br>
+                <input type="text" name ="image_path" ><br>
+                <label>Price: </label><br>
+                <input type="text" name ="price" ><br>
+                <label>Description: </label><br>
+                <textarea cols="29" rows="7" name="description" ></textarea><br><br>
+                <input type="reset" value="Reset" name="reset">
+            </Div>
+
+        </fieldset>
+    </form>
+</main>
+<footer>
+</footer>
+
+</html>

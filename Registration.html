@@ -1,0 +1,106 @@
+<!--//Jacynta Ryan-->
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>KookyCookingClub</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <h1 id="heading">KookyCookingClub</h1>
+
+<script>
+    
+function validateForm() {
+  var first_name = document.forms["form"]["first_name"].value;
+  var last_name = document.forms["form"]["last_name"].value;
+  var username = document.forms["form"]["user_name"].value;
+  var email = document.forms["form"]["email"].value;
+  var password = document.forms["form"]["password"].value;
+  var phone = document.forms["form"]["phone"].value;
+  var address = document.forms["form"]["address"].value;
+  if (first_name == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+  else if (last_name == "") {
+    alert("Last Name must be filled out");
+    return false;
+  }
+  else if (password == "") {
+    alert("password must be filled out");
+    return false;
+  }
+  else if (phone == "") {
+    alert("mobile must be filled out");
+    return false;
+  }
+  else if (email == "") {
+    alert("email must be filled out");
+    return false;
+  }
+  else if (address == "") {
+    alert("address must be filled out");
+    return false;
+  }
+  else if (username == "") {
+    alert("username must be filled out");
+    return false;
+  }
+}
+</script>
+
+<header>
+
+</header>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="Index.php">Home</a></li>
+        <li><a href="Courses.php">Courses</a></li>
+        <li><a href="Events.php">Events</a></li>
+        <li><a href="Login.html">Log In</a></li>      
+    </ul>
+</nav>
+
+<main>
+    <h2 id="reg_header">Registration</h2>
+    <form action ="register.php"  id="form" onsubmit="return validateForm()" method ="POST">
+        <fieldset>
+
+
+            <Div id ="left_form" style="float:left">
+                <label>First name:</label><br>
+                <input type="text" name="first_name" ><br>
+                <label>Username:</label><br>
+                <input type="text" name="user_name" ><br>
+                <label >Mobile:</label><br>
+                <select id="prefix">
+                    <option value="083">083</option>
+                    <option value="085">085</option>
+                    <option value="086">086</option>
+                    <option value="087">087</option>
+                    <option value="089">089</option>
+                </select>
+                <input type="text" id ="phone" name="phone" ><br>
+                <label>D.O.B:</label><br>
+                <input type="date" name="date"><br><br>
+                <input type="submit" value="Submit" name="submit">
+            </Div>
+            <Div id ="right_form" style="float:right">
+                <label>Last name:</label><br>
+                <input type="text" name ="last_name" ><br>
+                <label>Password:</label><br>
+                <input type="password" name="password" ><br>
+                <label>Email:</label><br>
+                <input type="email" name="email" ><br>
+                <label>Address</label><br>
+                <textarea cols="29" rows="3" name="address" ></textarea><br><br>
+                <input type="reset" value="Reset" name="reset">
+            </Div>
+
+        </fieldset>
+    </form>
+</main>
+<footer>
+</footer>
+
+</html>
